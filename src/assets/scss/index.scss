@@ -1,0 +1,97 @@
+@charset "UTF-8";
+@import "./variables.scss";
+@import "./mixin.scss";
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  p,
+  span,
+  div {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  p,
+  span,
+  div,
+  a {
+    font-size: 16px;
+  }
+  a span,
+  button span {
+    color: white;
+  }
+  margin: 0px;
+  padding: 0px;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 700;
+  }
+  /* GLOBALS */
+  h1 {
+    font-size: 32px;
+    line-height: 37px;
+  }
+  h2 {
+    font-size: 28px;
+    line-height: 34px;
+  }
+  h3 {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  h4 {
+    font-size: 20px;
+    line-height: 29px;
+  }
+  h5 {
+    font-size: 16px;
+    line-height: 29px;
+  }
+  h6 {
+    font-size: 16px;
+    line-height: 29px;
+  }
+  @include breakpoint(md) {
+    h1 {
+      font-size: 40px;
+      line-height: 43px;
+    }
+    h2 {
+      font-size: 32px;
+      line-height: 37px;
+    }
+    h3 {
+      font-size: 28px;
+      line-height: 34px;
+    }
+    h4 {
+      font-size: 24px;
+      line-height: 29px;
+    }
+    h5 {
+      font-size: 20px;
+      line-height: 29px;
+    }
+    h6 {
+      font-size: 16px;
+      line-height: 29px;
+    }
+  }
+  a,
+  a:visited,
+  a:hover {
+    letter-spacing: 0.2px;
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
